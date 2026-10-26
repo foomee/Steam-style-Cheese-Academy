@@ -177,6 +177,11 @@ h1 {
     width: 12rem;
 }
 
+.about-review {
+  text-decoration: none;
+  color: #f5f067;  
+}
+
 .G {
     color: #f5f067;
     text-decoration: none;
@@ -274,7 +279,6 @@ h3 {
     background: linear-gradient(#504f33, #605e48);
 }
 
-
 .news-and-btn {
     display: flex;
     justify-content: space-between;
@@ -305,7 +309,6 @@ h3 {
     display: block;
     text-decoration: none;
     color: white;
-
 }
 
 .article-img {
@@ -313,13 +316,63 @@ h3 {
   height: auto;
 }
 
+.review h2 {
+  padding-top: 20px;
+}
+
+.review-item {
+  background-color: #2d2b16;
+  display: flex;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+
+  flex: 1;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+}
+
+.user-name {
+  font-size: 13px;
+}
+
+.user-when {
+  font-size: 11px;
+}
+
+.user-review {
+  flex: 2;
+}
+
+.recommend {
+  display: flex;
+  background-color: #13140a;
+}
+
+.recommend img {
+  width: 40px;
+  height: 40px;
+}
+
+.thumbs-up {
+  font-size: 20px;
+  align-items: center;
+}
+
 .contact {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .contact-info {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+   margin-bottom: 40px;
 }
 
 .contact-form {
@@ -359,27 +412,26 @@ h3 {
   cursor: pointer;
   border-radius: 10px;
   font-size: 21px;
-
 }
 
 footer {
-    background: #252517;
-    margin-top: 80px;
+  background: #252517;
+  margin-top: 80px;
 }
 
 .footer {
-    padding: 40px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer p{
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   .top-info {
     flex-direction: column;
   }
@@ -391,9 +443,21 @@ footer {
   .about {
     order: 1;
   }
+
+  .about img {
+    max-width: 320px;
+  }
   
   .main-info {
     flex-direction: column;
+  }
+
+  .review-item {
+    flex-direction: column;
+  }
+
+  .user {
+    margin-bottom: 15px;
   }
 }
 
